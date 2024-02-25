@@ -2,13 +2,20 @@ import { FaRegCheckCircle } from "react-icons/fa";
 import { IoInformationCircleOutline } from "react-icons/io5";
 import LongCard from "../LongCard/LongCard";
 import { useEffect, useState } from "react";
+import SmallCard from "../SmallCard/SmallCard";
 const Home = () => {
     const [longCards, setlongcards] = useState([]);
+    const [smallCards, setSmallcards] = useState([]);
     useEffect(() => {
         fetch('/LongCard.json')
             .then(res => res.json())
             .then(data => {
                 setlongcards(data);
+            })
+        fetch('/smallCard.json')
+            .then(res => res.json())
+            .then(data => {
+                setSmallcards(data);
             })
     }, [])
     return (
@@ -54,9 +61,11 @@ const Home = () => {
                 }
             </div>
             {/* ====================== Related deal section ====================== */}
-            <h2 className="text-3xl font-semibold">Related deals you might like for</h2>
-                <div className="">
-
+            <h2 className="text-3xl font-semibold my-10 mt-10">Related deals you might like for</h2>
+                <div className="grid grid-cols-3 gap-10">
+                    {
+                        smallCards.map(i=> <SmallCard key={i.id} card={i}></SmallCard>)
+                    }
                 </div>
         </div>
     );
