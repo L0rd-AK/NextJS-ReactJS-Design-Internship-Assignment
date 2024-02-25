@@ -3,14 +3,14 @@ import { IoInformationCircleOutline } from "react-icons/io5";
 import LongCard from "../LongCard/LongCard";
 import { useEffect, useState } from "react";
 const Home = () => {
-    const [longCards,setlongcards]=useState([]);
-    useEffect(()=>{
-        fetch('/LongCars.json')
-        .then(res=>res.json())
-        .then(data=>{
-            setlongcards(data);
-        })
-    },[])
+    const [longCards, setlongcards] = useState([]);
+    useEffect(() => {
+        fetch('/LongCard.json')
+            .then(res => res.json())
+            .then(data => {
+                setlongcards(data);
+            })
+    }, [])
     return (
         <div className="max-w-5xl mx-auto mt-10 grid grid-cols-1">
             <h1 className="text-5xl text-left mb-5">Best Website builders in the US</h1>
@@ -47,11 +47,14 @@ const Home = () => {
                     <li>Hosting6</li>
                 </ul>
             </div>
-             {/* ====================== long cards ====================== */}
-             {
-                longCards.map(i=><LongCard key={i.id} card={i}></LongCard>)
-             }
-             
+            {/* ====================== long cards ====================== */}
+            <div className="grid grid-cols-1 gap-10">
+                {
+                    longCards.map(i => <LongCard key={i.id} card={i}></LongCard>)
+                }
+            </div>
+            {/* ====================== Related deal section ====================== */}
+            <h2>Related deals you might like for</h2>
         </div>
     );
 };

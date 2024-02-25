@@ -1,43 +1,47 @@
 [
     {
         "id":1,
+        "img":"https://i.ibb.co/1TkqJZ3/demo.png",
         "title":"WixPro 72-Inch Responsive Website Builder-",
-        "title-description":"Comprehensive Digital Platform Creation Tool, Streamlined Design Interface for Professional Websites and Online Stores (Black/Blue)",
-        "highlight-description":"[What You Get]: Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides.",
+        "titleDescription":"Comprehensive Digital Platform Creation Tool, Streamlined Design Interface for Professional Websites and Online Stores (Black/Blue)",
+        "highlightDescription":"[What You Get]: Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides.",
         "rating":"9.8",
-        "rating-comment":"Exceptional"
+        "ratingComment":"Exceptional"
     },
     {
         "id":2,
+        "img":"https://i.ibb.co/1TkqJZ3/demo.png",
         "title":"SiteCraft 68-Inch Ultimate Web Design Studio-",
-        "title-description":"Advanced Site Creation Toolkit, Intuitive Drag-and-Drop Editor for Dynamic Websites and E-commerce Platforms (Green/White)",
-        "highlight-description":"[What You Get]: Gain access to the SiteCraft design studio, featuring a robust selection of design elements, SEO optimization tools, and e-commerce integrations.",
+        "titleDescription":"Advanced Site Creation Toolkit, Intuitive Drag-and-Drop Editor for Dynamic Websites and E-commerce Platforms (Green/White)",
+        "highlightDescription":"[What You Get]: Gain access to the SiteCraft design studio, featuring a robust selection of design elements, SEO optimization tools, and e-commerce integrations.",
         "rating":"9.5",
-        "rating-comment":"Excellent"
+        "ratingComment":"Excellent"
     },
     {
         "id":3,
+        "img":"https://i.ibb.co/1TkqJZ3/demo.png",
         "title":"WixPro 72-Inch Responsive Website Builder-",
-        "title-description":"Comprehensive Digital Platform Creation Tool, Streamlined Design Interface for Professional Websites and Online Stores (Black/Blue)",
-        "highlight-description":"[What You Get]: Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides.",
+        "titleDescription":"Comprehensive Digital Platform Creation Tool, Streamlined Design Interface for Professional Websites and Online Stores (Black/Blue)",
+        "highlightDescription":"[What You Get]: Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides.",
         "rating":"9.3",
-        "rating-comment":"Exceptional"
+        "ratingComment":"Exceptional"
     },
     {
         "id":4,
+        "img":"https://i.ibb.co/1TkqJZ3/demo.png",
         "title":"CDK Resposive Builder:",
-        "title-description":" An extensive library of widgets and apps, and detailed step-by-step guides",
-        "highlight-points":{
-            "1":"building responsive",
-            "2":"cool",
-            "3":"Docs"
+        "titleDescription":" An extensive library of widgets and apps, and detailed step-by-step guides",
+        "highlightPoints":{
+            "one":"building responsive",
+            "two":"cool",
+            "three":"Docs"
         },
-        "Why-we-love-it":{
-            "1":"Documentation",
-            "2":"Easy Use",
-            "3":"Out of Box"
+        "WhyWeLoveIt":{
+            "one":"Documentation",
+            "two":"Easy Use",
+            "three":"Out of Box"
         },
         "rating":"9.1",
-        "rating-comment":"Exceptional"
+        "ratingComment":"Exceptional"
     }
 ]
