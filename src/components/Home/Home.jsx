@@ -62,11 +62,31 @@ const Home = () => {
             </div>
             {/* ====================== Related deal section ====================== */}
             <h2 className="text-3xl font-semibold my-10 mt-10">Related deals you might like for</h2>
-                <div className="grid grid-cols-3 gap-10">
-                    {
-                        smallCards.map(i=> <SmallCard key={i.id} card={i}></SmallCard>)
-                    }
+            <div className="grid grid-cols-3 gap-5">
+                {
+                    smallCards.map(i => <SmallCard key={i.id} card={i}></SmallCard>)
+                }
+            </div>
+            {/* news later sectuon */}
+            <div className="flex float-left justify-between mt-20">
+                <div>
+                    <h1 className="text-3xl font-semibold">Sign up and get exclusive <br /> special deals</h1>
                 </div>
+                <div>
+                    <form>
+                        <h6 className="footer-title">Newsletter</h6>
+                        <fieldset className="form-control w-80">
+                            <label className="label">
+                                <span className="label-text">Enter your email address</span>
+                            </label>
+                            <div className="join">
+                                <input type="text" placeholder="username@site.com" className="input input-bordered join-item" />
+                                <button className="btn bg-[#1B88F4] join-item text-white">Sign up</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
         </div>
     );
 };
