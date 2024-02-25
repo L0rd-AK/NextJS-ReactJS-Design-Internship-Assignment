@@ -54,7 +54,10 @@ const Home = () => {
                 }
             </div>
             {/* ====================== Related deal section ====================== */}
-            <h2>Related deals you might like for</h2>
+            <h2 className="text-3xl font-semibold">Related deals you might like for</h2>
+                <div className="">
+
+                </div>
         </div>
     );
 };

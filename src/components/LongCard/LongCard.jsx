@@ -5,7 +5,7 @@ const LongCard = ({card}) => {
     console.log(card);
     return (
         <div className="card card-side bg-base-100">
-            <figure className="p-5"><img src="https://i.ibb.co/1TkqJZ3/demo.png" alt="Movie" /></figure>
+            <figure className="p-5"><img src={card?.img} alt="Movie" /></figure>
             <div className="card-body grid grid-cols-3">
                 <div className="col-span-2">
                     <h2 className="card-title">{card?.title}</h2>
@@ -24,7 +24,7 @@ const LongCard = ({card}) => {
                         card?.WhyWeLoveIt ?
                         <div className="mb-3 grid grid-cols-1 gap-2">
                             <p>Why we Love it</p>
-                            <p className="text-sm"> <IoMdCheckmarkCircleOutline className="text-success inline" /> {card?.WhyWeLoveIt?.one}</p>
+                            <p className="text-sm mt-2"> <IoMdCheckmarkCircleOutline className="text-success inline" /> {card?.WhyWeLoveIt?.one}</p>
                             <p className="text-sm"> <IoMdCheckmarkCircleOutline className="text-success inline" /> {card?.WhyWeLoveIt.two}</p>
                             <p className="text-sm"> <IoMdCheckmarkCircleOutline className="text-success inline" /> {card?.WhyWeLoveIt.three}</p>
                         </div>:
