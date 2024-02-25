@@ -1,7 +1,16 @@
 import { FaRegCheckCircle } from "react-icons/fa";
 import { IoInformationCircleOutline } from "react-icons/io5";
 import LongCard from "../LongCard/LongCard";
+import { useEffect, useState } from "react";
 const Home = () => {
+    const [longCards,setlongcards]=useState([]);
+    useEffect(()=>{
+        fetch('/LongCars.json')
+        .then(res=>res.json())
+        .then(data=>{
+            setlongcards(data);
+        })
+    },[])
     return (
         <div className="max-w-5xl mx-auto mt-10 grid grid-cols-1">
             <h1 className="text-5xl text-left mb-5">Best Website builders in the US</h1>
@@ -39,7 +48,10 @@ const Home = () => {
                 </ul>
             </div>
              {/* ====================== long cards ====================== */}
-             <LongCard></LongCard>
+             {
+                longCards.map(i=><LongCard key={i.id} card={i}></LongCard>)
+             }
+             
         </div>
     );
 };
