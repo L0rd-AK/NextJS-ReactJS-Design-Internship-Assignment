@@ -4,10 +4,10 @@ import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 const LongCard = ({card}) => {
     console.log(card);
     return (
-        <div className="card card-side bg-base-100">
-            <figure className="p-5"><img src={card?.img} alt="Movie" /></figure>
-            <div className="card-body grid grid-cols-3">
-                <div className="col-span-2">
+        <div className="card card-side bg-base-100 flex flex-col md:flex-row">
+            <figure className="p-5"><img src={card?.img} alt="card" /></figure>
+            <div className="card-body grid grid-cols-1 md:grid-cols-3">
+                <div className="md:col-span-2">
                     <h2 className="card-title">{card?.title}</h2>
                     <p className="text-justify text-sm">{card?.titleDescription}</p>
                     <h2 className="text-xl font-medium mt-3">Main highlights:</h2>
@@ -33,7 +33,7 @@ const LongCard = ({card}) => {
                     <span className="text-[#1B88F4]">Show more <IoIosArrowDown className="inline" /> </span>
                 </div>
                 <div className="card-actions col-span-1 flex flex-col justify-center items-center gap-20">
-                    <div className="flex flex-col justify-center items-center py-5 px-10 bg-[#F3F9FF] rounded-b-lg space-y-3 -mt-8">
+                    <div className="flex flex-col justify-center items-center py-5 px-10 bg-[#F3F9FF] rounded-b-lg space-y-3 md:-mt-8">
                         <div className="relative">
                             <IoInformationCircleOutline className="absolute -mt-3 ml-12 text-sm" />
                             <h1 className="font-medium text-3xl">{card?.rating}</h1>

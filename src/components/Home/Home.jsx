@@ -20,10 +20,10 @@ const Home = () => {
     }, [])
     return (
         <div className="max-w-5xl mx-auto mt-10 grid grid-cols-1">
-            <h1 className="text-5xl text-left mb-5">Best Website builders in the US</h1>
+            <h1 className="text-3xl md:text-5xl text-left mb-5 px-5">Best Website builders in the US</h1>
             <hr className="border-[1px]" />
-            <div className="flex gap-10 my-3">
-                <div className="flex float-left gap-3 justify-center items-center">
+            <div className="text-sm flex md:gap-10 md:my-3 px-5">
+                <div className="flex md:float-left gap-3 justify-center items-center">
                     <FaRegCheckCircle />
                     <p>Last Updated - February 22, 2020</p>
                 </div>
@@ -35,7 +35,7 @@ const Home = () => {
             <hr className="border-[1px]" />
             {/* =========== buttons ============== */}
             <div className="mt-5 block">
-                <ul className="flex float-left gap-10">
+                <ul className="flex flex-wrap md:float-left gap-5 md:gap-10 justify-center">
                     <a href=""><li>Tools</li></a>
                     <a href=""><li>AWS Builder</li></a>
                     <a href=""><li>Start Build</li></a>
@@ -45,7 +45,7 @@ const Home = () => {
                 </ul>
             </div>
             {/* ====================== Breadcrumbs ====================== */}
-            <div className="text-sm breadcrumbs mt-5 block">
+            <div className="text-sm breadcrumbs mt-5 block px-5">
                 <ul>
                     <li><a>Home</a></li>
                     <li><a>Hosting for all</a></li>
@@ -61,16 +61,16 @@ const Home = () => {
                 }
             </div>
             {/* ====================== Related deal section ====================== */}
-            <h2 className="text-3xl font-semibold my-10 mt-10">Related deals you might like for</h2>
-            <div className="grid grid-cols-3 gap-5">
+            <h2 className="text-3xl font-semibold my-10 mt-10 p-5">Related deals you might like for</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                 {
                     smallCards.map(i => <SmallCard key={i.id} card={i}></SmallCard>)
                 }
             </div>
             {/* news later sectuon */}
-            <div className="flex float-left justify-between mt-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 md:gap-44 mt-20 p-5">
                 <div>
-                    <h1 className="text-3xl font-semibold">Sign up and get exclusive <br /> special deals</h1>
+                    <h1 className="text-3xl font-semibold mb-10">Sign up and get exclusive <br /> special deals</h1>
                 </div>
                 <div>
                     <form>

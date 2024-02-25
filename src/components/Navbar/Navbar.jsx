@@ -8,14 +8,14 @@ const Navbar = () => {
                     <div tabIndex={0} role="button" className="btn btn-ghost text-white lg:hidden">
                     <GiHamburgerMenu />
                     </div>
-                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-slate-500 rounded-box w-52">
+                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#212731] rounded-box w-52">
                         <div className="form-control relative">
-                            <IoSearch className="absolute mt-4 ml-36 text-xl"  />
-                            <input type="text" placeholder="Search..." className="input cursor-pointer text-black w-44 mb-5 md:w-auto rounded-md" />
+                            <IoSearch className="absolute mt-2 ml-36 text-xl"  />
+                            <input type="text" placeholder="Search..." className="input cursor-pointer text-black w-44 h-10 mb-5 md:w-auto rounded-full" />
                         </div>
-                        <li><a>Categories</a></li>
-                        <li><a>Website Builders</a></li>
-                        <li><a>Todays deals</a></li>
+                        <li className="text-white"><a>Categories</a></li>
+                        <li className="text-white"><a>Website Builders</a></li>
+                        <li className="text-white"><a>Todays deals</a></li>
                     </ul>
                 </div>
 
