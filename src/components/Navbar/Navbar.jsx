@@ -2,7 +2,7 @@ import { IoSearch } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
 const Navbar = () => {
     return (
-        <div className="navbar bg-[#212731] border-red-600 border-2">
+        <div className="navbar bg-[#212731]">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost text-white lg:hidden">
@@ -20,7 +20,7 @@ const Navbar = () => {
                 </div>
 
             </div>
-            <div className="navbar-center hidden lg:flex text-white border-red-600 border-2 mr-60">
+            <div className="navbar-center hidden lg:flex text-white md:mr-72">
                 <ul className="menu menu-horizontal px-1 gap-10 justify-center items-center">
                     <div className="form-control relative mr-28">
                         <IoSearch className="absolute text-black text-2xl ml-52 mt-3 cursor-pointer" />

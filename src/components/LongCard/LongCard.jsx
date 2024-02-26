@@ -4,8 +4,19 @@ import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 const LongCard = ({card}) => {
     console.log(card);
     return (
-        <div className="card card-side bg-base-100 flex flex-col md:flex-row">
-            <figure className="p-5"><img src={card?.img} alt="card" /></figure>
+        <div className="card card-side bg-white flex flex-col md:flex-row relative">
+            <p className="rounded-full border-[#E1E4E6] border-[1px] absolute px-2 ml-3 md:-mt-5 text-lg bg-[#ffffff]">{card?.id}</p>
+            {
+                card?.speciality ?
+                <div className="flex justify-center items-center gap-2 bg-[#FF7724] absolute px-2 py-1 mt-10 md:px-4 md:py-2 md:mt-5 rounded-r-lg">
+                    <img className="w-5 h-5" src={card?.speciality.icon} alt="" />
+                    {card?.speciality.text}
+                </div>:
+                <p></p>
+            }
+            <figure className="p-5">
+                <img src={card?.img} alt="card" />
+            </figure>
             <div className="card-body grid grid-cols-1 md:grid-cols-3">
                 <div className="md:col-span-2">
                     <h2 className="card-title">{card?.title}</h2>

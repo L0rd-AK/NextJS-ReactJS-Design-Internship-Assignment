@@ -20,7 +20,7 @@ const Home = () => {
     }, [])
     return (
         <div className="max-w-5xl mx-auto mt-10 grid grid-cols-1">
-            <h1 className="text-3xl md:text-5xl text-left mb-5 px-5">Best Website builders in the US</h1>
+            <h1 className="text-3xl md:text-5xl md:text-left mb-5 px-5 text-center ">Best Website builders in the US</h1>
             <hr className="border-[1px]" />
             <div className="text-sm flex md:gap-10 md:my-3 px-5">
                 <div className="flex md:float-left gap-3 justify-center items-center">
@@ -55,13 +55,13 @@ const Home = () => {
                 </ul>
             </div>
             {/* ====================== long cards ====================== */}
-            <div className="grid grid-cols-1 gap-10">
+            <div className="grid grid-cols-1 gap-10 mt-10">
                 {
                     longCards.map(i => <LongCard key={i.id} card={i}></LongCard>)
                 }
             </div>
             {/* ====================== Related deal section ====================== */}
-            <h2 className="text-3xl font-semibold my-10 mt-10 p-5">Related deals you might like for</h2>
+            <h2 className="text-3xl font-semibold my-10 mt-10 p-5 text-center md:text-left">Related deals you might like for</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                 {
                     smallCards.map(i => <SmallCard key={i.id} card={i}></SmallCard>)
